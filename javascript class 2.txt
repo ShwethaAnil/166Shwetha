@@ -1,0 +1,94 @@
+RECAP:
+--------------
+HTML
+CSS
+JS--
+<script type="text/javascript" language="javascript">
+</script>
+Comments:
+html <!--  -->
+css and JS--   //   /*  */
+Variables--- smallletters/
+Constants-- SMALL--- uppercase
+
+smallContent
+
+DataTypes: primitive---string, number, boolean, null, undefined
+	non-primitive--Arrays, Object
+ Control Structures:
+---------------------
+if , if ..else,if ...else if..else,switch
+break, continue, goto
+while, do while,for,for in
+
+Operators
+
+function
+----------------
+function nameofthefunction(){
+
+}
+
+onclick
+onsubmit
+onchange
+onload
+onmouseover
+onmouseout
+
+alert
+confirm
+prompt
+
+document.getElementById("").value
+document.getElementById("").innerHTML
+document.getElementsByTagName("p")
+document.getElementsByClassName
+-----------------------------------------------------------------
+Validations:
+---------------
+uname----charecters
+password---  8 , one upper, lower,num and spc
+email--   name  . - name  @ domain . com/co.in
+number---   digits 10  // 789
+dob---
+language--mandatory
+country
+gender
+
+
++--- min 1 occurence
+*---- Zero or more 1
+? ---- optional( zero or one)
+.--- single
+/([a-zA-Z0-9\._]+)S00/
+
+nam_e.23sQ   @ letters  .  com  .co.in
+
+/^([^-_\.])([a-zA-Z0-9\._-]+)@([a-zA-Z]+).([a-zA-Z]{2,6})([\.a-z]{2,6})?$/
+
+/^([^-_\.])([a-zA-Z0-9\._-]+)@mphasis.com$/
+
+
+
+setTimeout
+clearTimeout
+
+setInterval
+clearInterval
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

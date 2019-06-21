@@ -1,0 +1,64 @@
+<html>
+<head>
+      <style>
+	input{
+	width:100%;
+	margin:8px 0;
+	padding: 12px 20px;
+	box-sizing:border-box;
+	border-radius:15px;	
+	border-color: blue;
+	}
+	.button{
+	width: 30%;
+	 background-color: green;
+	}
+	
+     </style>
+	<script type="text/javascript">
+function validate(){	
+var uname=document.getElementById("t1");
+var pas=document.getElementById("t2");
+if(uname.value.trim() == ""){
+	//alert("blank fiels  is not allowed");
+	uname.style.border="solid 3px red"; 
+	return false;
+}else if(pas.value.trim() == ""){
+	pas.style.border="solid 3px red";
+	return false;
+}else if(pas.value.trim().length < 5){
+	document.getElementById("lpas")
+	.style.visibility ="visible";
+	return false;
+}else{
+	return true;
+}
+}
+	</script>
+</head>
+      <body>
+	
+<h2>Login Form</h2>
+	<fieldset>
+	<legend>Login</legend>
+	<form onsubmit="return validate()" action="third.html" 	method="get" autocomplete="off">
+	<label> UserName*</label>
+	<input type="text" name="uname"
+	placeholder="enter username"  id="t1">
+	<br/>
+	<br/>	
+	<label>Password*</label>
+	&nbsp;
+	<input type="password" name="pwd"
+	id="t2"
+	placeholder="enter password" >
+	<br/>
+<label id="lpas" style="color:red;visibility:hidden">Password is too Short
+</label>	<br/><br/>
+	<input type="submit" value="SignIn" class="button">
+	<input type="reset" value="Cancel"
+class="button">
+	</form>
+	</fieldset>
+      </body>
+</html>

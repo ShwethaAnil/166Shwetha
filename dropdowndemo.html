@@ -1,0 +1,29 @@
+<html>
+<head>
+	
+</head>
+<body>
+<form id="example" name="example">
+	<select id="selector" name="selector">
+	<option value="" selected></option>
+	<option value=1>Telivision</option>
+	<option value=2>Laptop</option>
+	<option value=3>Phone</option>
+	</select>
+	<br/>
+<input  type="text" value="" id="populateitem" name="populateitem">
+</form>
+<script type="text/javascript">
+	document.example.selector.onchange= updateText;
+	var myData=new Array();
+	myData[1]='56000';
+	myData[2]='30000';
+	myData[3]='27500';
+ function updateText(){
+	var obj=document.example.selector;
+	document.example.populateitem.value=
+	myData[obj.value];
+}
+</script>
+</body>
+</html>

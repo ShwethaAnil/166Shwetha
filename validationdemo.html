@@ -1,0 +1,59 @@
+<html>
+<head>
+      <style>
+	input{
+	width:100%;
+	margin:8px 0;
+	padding: 12px 20px;
+	box-sizing:border-box;
+	border-radius:15px;	
+	border-color: blue;
+	}
+	.button{
+	width: 30%;
+	 background-color: green;
+	}
+	
+     </style>
+	<script type="text/javascript">
+function validate(){	
+var uname=document.getElementById("t1").value;
+//regx= new RegExp("S00","i");
+//var regx=/[a-z]eeth/;
+//var regx=/[^a-z]eeth/;// not a-z in 1st position
+//var regx=/[a-z]e[m-y]th/;
+//      \d---digit   \w-- any word-- 0-9 A-Z a-z _ 
+//var regx=/^[0-9]{8}$/;
+//var regx=/^[A-Za-z]{8}$/;
+//var regx=/^[A-Za-z]*$/;
+//var regx=/a.b/;
+var regx=/^([a-zA-Z0-9_\.-]+)@([a-z]+).([a-z]{2,6})(\.[a-z]{2,6})?$/;
+if(regx.test(uname)){	
+	document.getElementById("luname")
+	.style.visibility="hidden";
+}
+else{
+document.getElementById("luname")
+	.style.visibility="visible";
+}
+}
+</script>
+</head>
+      <body>	
+<h2>Login Form</h2>
+	<fieldset>
+	<legend>Login</legend>
+	<form autocomplete="off">
+	<label> UserName*</label>
+	<input type="text" name="uname"
+	placeholder="enter username"  id="t1">
+	<br/>
+	<br/>	
+	<br/>
+<label id="luname" style="color:red;visibility:hidden">Invalid
+</label>	<br/><br/>
+	<input type="button" value="SignIn" class="button" onclick="validate()">
+	</form>
+	</fieldset>
+      </body>
+</html>

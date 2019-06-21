@@ -1,0 +1,31 @@
+<html>
+<head>
+<script>
+var id=0;
+var opacity=0;
+function fadeout(){
+     id=setInterval(hide,200);
+}
+function hide(){
+	img=document.getElementById("img1");
+opacity=window.getComputedStyle(img).getPropertyValue("opacity");
+if(opacity > 0){
+	opacity=opacity-0.1;
+	img.style.opacity= opacity;
+}else{
+	clearInterval(id);
+}
+}
+function fadein(){
+}
+
+</script>
+</head>
+<body>
+	<button onclick="fadeout()" id="btn1">
+	FadOut</button>
+<img src="code.jpg" alt="not avialble" id="img1" >
+	<button onclick="fadein()" id="btn2">
+	FadeIn</button>
+</body>
+</html>

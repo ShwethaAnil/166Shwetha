@@ -1,0 +1,26 @@
+<html>
+<head>
+<script>
+var id=0;
+function printmsg(){
+document.getElementById("t1").innerHTML="5 seconds";
+}
+function start(){
+ id=window.setInterval(function a(){alert("hi");}
+,3000);
+
+}
+function stop(){
+window.clearTimeout(id);
+}
+
+</script>
+</head>
+<body>
+	<button onclick="start()" id="btn1">
+	Start</button>
+<h2 id="t1">Some Text</h2>
+	<button onclick="stop()" id="btn2">
+	Stop</button>
+</body>
+</html>
